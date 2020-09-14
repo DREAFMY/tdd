@@ -11,4 +11,12 @@ public class MommifierTest {
         assertEquals(true,bln);
     }
 
+    @Test
+    void insert_mommy_for_each_continue_vowels_when_more_than_30_percent_vowels() {
+        Mommifier mommy = new Mommifier();
+        String str = "aaihefsuiie";
+        String result = mommy.insertMommy(str);
+        assertEquals("amommyamommyihefsumommyimommyimommye", result);
+    }
+
 }

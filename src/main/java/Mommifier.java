@@ -8,4 +8,8 @@ public class Mommifier {
         }
         return  30 <= j * 100 / str.length();
     }
+
+    public String insertMommy(String str) {
+        return " ";
+    }
 }
