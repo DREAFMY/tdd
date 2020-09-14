@@ -6,8 +6,8 @@ public class MommifierTest {
     @Test
     void is_number_of_vowels_more_than_thirty_percent() {
         Mommifier mommy = new Mommifier();
-        String str1 = "aaaaaeeeeiisfddvr";
-        Boolean bln = mommy.mommyInsert(str1);
+        String str = "aaaaaeeeeiisfddvr";
+        Boolean bln = mommy.isMoreThan30(str);
         assertEquals(true,bln);
     }
 
