@@ -19,4 +19,12 @@ public class MommifierTest {
         assertEquals("amommyamommyihefsumommyimommyimommye", result);
     }
 
+    @Test
+    void return_original_string_when_number_of_vowels_less_than_30_percent() {
+        Mommifier mommy = new Mommifier();
+        String str = "thgduihjbgvdr";
+        String result = mommy.insertMommy(str);
+        assertEquals("thgduihjbgvdr", result);
+    }
+
 }
